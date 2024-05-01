@@ -39,9 +39,9 @@ class NumberValidator(BaseValidator):
         if not isinstance(value, (int, float)):
             raise TypeError(f'Ожидаемый тип для {value!r} int или float')
         if self.minvalue is not None and value < self.minvalue:
-            raise ValueError(f'Ожидалось {value!r} что будет больше или равно {self.minvalue!r}')
+            raise ValueError(f'Ожидалось что {value!r} будет больше или равно {self.minvalue!r}')
         if self.maxvalue is not None and value > self.maxvalue:
-            raise ValueError(f'Ожидалось {value!r} что будет меньше или равно {self.maxvalue!r}')
+            raise ValueError(f'Ожидалось что {value!r} будет меньше или равно {self.maxvalue!r}')
 
 
 if __name__ == "__main__":
