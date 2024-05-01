@@ -14,12 +14,12 @@ class Timer:
 
 if __name__ == "__main__":
 
-    with Timer() as timer:
+    with Timer():
         # здесь мы получили экземпляр класса Timer
         time.sleep(3)
     # здесь работа с таймером была завершена
 
-    with Timer() as timer2:
+    with Timer():
         # здесь мы получили новый экземпляр класса Timer
         time.sleep(1)
     # здесь работа с таймером была завершена
